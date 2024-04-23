@@ -14,7 +14,7 @@ export default function History() {
     const fetchTransactions = async () => {
       try {
         const response = await axios.get(
-          `https://backendtracker-1.onrender.com/transactions?userId=${user.id}`
+          `https://expense-tracker-json-server-tlf2.onrender.com/transactions?userId=${user.id}`
         );
         setTransactions(response.data);
       } catch (error) {

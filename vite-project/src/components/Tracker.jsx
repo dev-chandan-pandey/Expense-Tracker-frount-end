@@ -37,7 +37,7 @@ const Tracker = () => {
       return;
     }
     try {
-      await axios.post("https://backendtracker-1.onrender.com/transactions", {
+      await axios.post("https://expense-tracker-json-server-tlf2.onrender.com/transactions", {
         ...transaction,
         userId: user.id,
       });

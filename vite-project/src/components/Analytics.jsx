@@ -91,7 +91,7 @@ const Analytics = () => {
       const fetchData = async () => {
         try {
           const response = await axios.get(
-            "https://backendtracker-1.onrender.com/transactions"
+            "https://expense-tracker-json-server-tlf2.onrender.com/transactions"
           );
           const transactions = response.data;
 

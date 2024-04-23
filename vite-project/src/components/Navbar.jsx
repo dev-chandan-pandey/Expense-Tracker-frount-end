@@ -3,17 +3,17 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className="shadow-md">
-      <div className=" flex justify-between p-[20px] w-[80%] m-auto text-[28px] font-semibold ">
-        <NavLink to="/signup" className="hover:underline hover:text-green-400">
+    <div className="">
+      <div className=" flex justify-between p-[30px]  text-[30px] font-bold ">
+        <NavLink to="/signup" className=" hover:text-red-600">
           Signup
         </NavLink>
-        <NavLink to="/login" className="hover:underline hover:text-green-400">
+        <NavLink to="/login" className=" hover:text-blue-400">
           Login
         </NavLink>
         <NavLink
           to="/dashboard"
-          className="hover:underline hover:text-green-400"
+          className="hover:underline hover:text-yellow-600"
         >
           Dashboard
         </NavLink>

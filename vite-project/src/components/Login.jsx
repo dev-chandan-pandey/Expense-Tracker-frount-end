@@ -90,7 +90,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        `https://backendtracker-1.onrender.com/users?email=${formData.email}&password=${formData.password}`
+        `https://expense-tracker-json-server-tlf2.onrender.com/users?email=${formData.email}&password=${formData.password}`
       );
       if (data.length > 0) {
         dispatch(setUser(data[0]));
@@ -105,11 +105,11 @@ const Login = () => {
   };
 
   return (
-    <div className="w-[50%] mx-auto justify-center p-[20px] bg-green-300 mt-[20px]">
-      <h1 className=" text-center text-[34px] font-bold text-white ">LOGIN</h1>
+    <div className="flex justify-center p-[30px] bg-blue-300 mt-[50px]">
+      <h1 className=" text-center text-[34px]">LOGIN</h1>
 
       <form
-        className=" flex flex-col gap-[12px] P-[20px]"
+        className=" flex flex-col gap-[20px] P-[20px]"
         onSubmit={handleSubmit}
       >
         <input
@@ -119,7 +119,7 @@ const Login = () => {
           onChange={handleChange}
           placeholder="Email"
           required
-          className="p-[10px] w-[60%] m-auto"
+          className="p-[10px]"
         />
         <input
           type="password"
@@ -128,11 +128,11 @@ const Login = () => {
           onChange={handleChange}
           placeholder="Password"
           required
-          className="p-[10px] w-[60%] m-auto"
+          className="p-[10px]"
         />
         <button
           type="submit"
-          className=" bg-blue-600 text-gray-100 w-[20%] m-auto px-[20px] py-[10px] rounded-md font-semibold hover:bg-blue-500 hover:text-gray-400"
+          className=" bg-red-600  px-[20px] py-[10px] rounded-md font-semibold hover:bg-red-300"
         >
           Login
         </button>

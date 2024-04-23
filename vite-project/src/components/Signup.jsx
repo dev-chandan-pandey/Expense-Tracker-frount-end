@@ -16,7 +16,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://backendtracker-1.onrender.com/users",
+        "https://expense-tracker-json-server-tlf2.onrender.com/users",
         formData
       );
       console.log("Signup Success:", response.data);
@@ -28,7 +28,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="w-[50%] mx-auto justify-center   bg-green-300 mt-[20px]">
+    <div className=" justify-center   bg-blue-700 mt-[30px]">
       <h1 className=" text-center text-[34px] font-bold text-white ">SIGNUP</h1>
       <form
         className=" flex flex-col gap-[12px] mt-[20px] p-[10px]"
@@ -41,7 +41,7 @@ const Signup = () => {
           onChange={handleChange}
           placeholder="Full Name"
           required
-          className="p-[10px] w-[60%] m-auto"
+        
         />
         <input
           type="email"
@@ -50,7 +50,7 @@ const Signup = () => {
           onChange={handleChange}
           placeholder="Email"
           required
-          className="p-[10px] w-[60%] m-auto"
+         
         />
         <input
           type="password"
@@ -59,11 +59,11 @@ const Signup = () => {
           onChange={handleChange}
           placeholder="Password"
           required
-          className="p-[10px] w-[60%] m-auto"
+          
         />
         <button
           type="submit"
-          className=" bg-blue-600 text-gray-100 w-[20%] m-auto px-[20px] py-[10px] rounded-md font-semibold hover:bg-blue-500 hover:text-gray-400"
+          className=" bg-red-300 text-gray-100 w-[20%] m-auto px-[20px] py-[10px] rounded-md font-semibold hover:bg-blue-500 hover:text-gray-400"
         >
           Sign Up
         </button>
