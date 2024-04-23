@@ -27,11 +27,11 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="mt-[30px] bg-green-200 w-[50%] mx-auto py-[20px] px-[50px]">
+    <div className="mt-[40px] bg-rose-500 w-[80%] mx-auto py-[30px] px-[30px]">
       <h1 className=" text-center text-[34px] font-bold text-white ">
         Dashboard
       </h1>
-      <div className="text-[26px] font-mono font-semibold flex justify-between">
+      <div className="text-[20px]  font-bold flex justify-between">
         <button onClick={() => setActiveComponent("tracker")}>Tracker</button>
         <button onClick={() => setActiveComponent("analytics")}>
           Analytics

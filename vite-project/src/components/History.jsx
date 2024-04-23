@@ -76,11 +76,11 @@ export default function History() {
 
   return (
     <div>
-      <h1 className=" text-center text-[30px] font-semibold font-mono  ">
+      <h1 className=" text-center text-[20px] font-bold   ">
         History
       </h1>
 
-      <div className="flex justify-center gap-[40px]">
+      <div className="flex justify-center gap-[35px]">
         <select
           value={filter}
           className="p-[10px]"
@@ -117,7 +117,7 @@ export default function History() {
               <button onClick={() => setEditingId(null)}>Cancel</button>
             </div>
           ) : (
-            <div className="flex justify-between font-semibold text-[18px] ">
+            <div className="flex justify-between font-bold text-[18px] ">
               <div className="p-[10px]">{transaction.category}</div>
               <div className="card-date p-[10px]">
                 {new Date(transaction.date).toDateString()}
@@ -125,19 +125,19 @@ export default function History() {
               <div
                 className={`card-amount ${
                   transaction.type === "Income" ? "income" : "expense"
-                } p-[10px]`}
+                } `}
               >
                 {transaction.type === "Income" ? "+" : "-"}₹{transaction.amount}
               </div>
               <div className="card-actions">
                 <button
-                  className="p-[10px] font-semibold text-[18px]"
+                  className=" font-bold text-20px]"
                   onClick={() => handleEditClick(transaction)}
                 >
                   📝
                 </button>
                 <button
-                  className="p-[10px] font-semibold text-[18px]"
+                  className=" font-bold text-[18px]"
                   onClick={() => handleDelete(transaction.id)}
                 >
                   🚮
